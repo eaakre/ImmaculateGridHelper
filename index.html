@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" type="module" defer></script>
+    <title>Immaculate Grid Helper</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="inputs">
+        <div class="inputs__form-div">
+          <form
+            id="inputForm"
+            name="inputForm"
+            action=""
+            class="inputs__form form"
+          >
+            <label for="playerName">Name:</label>
+            <input
+              name="playerName"
+              id="playerName"
+              type="text"
+              class="form__input"
+            />
+            <label for="gridNumber">Grid #:</label>
+            <input
+              name="gridNumber"
+              id="gridNumber"
+              type="number"
+              min="1"
+              max="9"
+              class="form__input"
+            />
+            <button id="inputSubmit" class="button form__submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__area" id="grid1">
+            <p class="grid__id">1</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid2">
+            <p class="grid__id">2</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid3">
+            <p class="grid__id">3</p>
+            <div class="added__names"></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__area" id="grid4">
+            <p class="grid__id">4</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid5">
+            <p class="grid__id">5</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid6">
+            <p class="grid__id">6</p>
+            <div class="added__names"></div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="grid__area" id="grid7">
+            <p class="grid__id">7</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid8">
+            <p class="grid__id">8</p>
+            <div class="added__names"></div>
+          </div>
+          <div class="grid__area" id="grid9">
+            <p class="grid__id">9</p>
+            <div class="added__names"></div>
+          </div>
+        </div>
+      </div>
+      <button class="button grid__reset">Reset</button>
+    </div>
+  </body>
+</html>
